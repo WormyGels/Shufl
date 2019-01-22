@@ -1,0 +1,648 @@
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#preload {
+  visibility: hidden ;
+  display: none ;
+  pointer-events: none ;
+  position: fixed ;
+
+}
+
+.tutlink {
+  text-decoration: none ;
+  font-weight: bold ;
+}
+.body {
+  margin-left: 10% ;
+  margin-right: 10% ;
+  font-family: sans-serif ;
+  background-color: #121212 ;
+  color: white ;
+  text-align: center ;
+  margin-bottom: 72px ;
+  margin-top: 48px ;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+a {
+  color: white ;
+}
+a:visited {
+  color: white ;
+}
+a:hover {
+  color: gray ;
+}
+a:active {
+  color: white ;
+}
+
+#nowplaying {
+  padding: 20px ;
+  display: absolute ;
+  background-color: #181818 ;
+  text-align: center ;
+  opacity: .8 ;
+
+}
+
+#info {
+  font-size: 22px ;
+  display: inline-block ;
+  vertical-align: top ;
+}
+
+.sinfo {
+  display: inline-block ;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+
+#playercontrols {
+  opacity: .8 ;
+  font-family: sans-serif;
+  text-align: center ;
+  background-color: #282828 ;
+  position: fixed ;
+  bottom: 0 ;
+  left: 0 ;
+  right: 0 ;
+  height: 60px ;
+}
+
+#controlbar {
+  padding: 0 ;
+  margin: 0 ;
+}
+
+.control {
+  padding: 0 ;
+  margin: 0 ;
+  vertical-align: middle ;
+  display: inline-block;
+  background: transparent ;
+  border: none ;
+  cursor: pointer ;
+  /*Because firefox is such a special little guy we have to do this*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+ }
+
+.control:focus {
+  outline: none ;
+  /*Because firefox is such a special little guy we have to do this*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+#time {
+  width: 100px ;
+}
+#seek {
+  width: 50% ;
+}
+
+#frame {
+  visibility: hidden ;
+  display: none ;
+  pointer-events: none ;
+  position: fixed ;
+}
+
+#covercontainer {
+  display: inline-block;
+  overflow: hidden ;
+  height: 186px ;
+  width: 186px ;
+}
+
+#cover {
+  pointer-events: none ;
+  margin-top: -72px;
+  margin-left: -26px;
+}
+
+#psongcontain {
+  text-align: left ;
+}
+
+.prevsongbtn {
+  height: 56px ;
+  color: white ;
+  width: 25% ;
+  opacity: .8 ;
+  background-color: #181818 ;
+  border-color: #181818 ;
+  border-style: solid ;
+}
+.prevsongbtn:hover {
+
+  background-color: #282828 ;
+  border-color: #282828 ;
+  cursor: pointer ;
+  animation-name: prevsongsbtnanim ;
+  animation-duration: .15s;
+}
+
+@keyframes prevsongsbtnanim {
+    from {background-color: #181818 ;}
+    from {border-color: #181818}
+    to {background-color: #282828 ;}
+    to {border-color: #282828 ;}
+}
+.prevsongbtnActive {
+  height: 56px ;
+  color: white ;
+  width: 25% ;
+  opacity: .8 ;
+  background-color: #282828 ;
+  border-color: #282828 ;
+  border-style: solid ;
+
+}
+.prevsongbtnActive:hover {
+  /*background-color: #181818 ;
+  border-color: #181818 ;*/
+  cursor: pointer ;
+}
+
+#favtab {
+}
+#normtab {
+  border-right-color: #282828 ;
+}
+#prevsongprev {
+  border-right-color: #282828 ;
+
+}
+#favsong {
+  border-right-color: #282828 ;
+
+
+}
+
+#prevsongnext {
+  width: 100% ;
+}
+
+#prevsongs {
+  opacity: .8 ;
+  text-align: left ;
+  padding: 20px ;
+  background-color: #181818 ;
+  display: absolute ;
+
+}
+
+#prevsongname {
+  font-size: 20px ;
+  display: inline-block ;
+  padding: 0px ;
+  margin: 0px ;
+
+
+}
+
+.prevsongdiv {
+  border-top: 1px solid #282828 ;
+  vertical-align: middle ;
+  padding: 5px ;
+  cursor: pointer ;
+}
+
+@keyframes prevsongsanim {
+    from {background-color: #181818 ;}
+    to {background-color: #282828 ;}
+}
+
+.prevsongdiv:hover {
+  background-color: #282828 ;
+
+  animation-name: prevsongsanim ;
+  animation-duration: .15s;
+}
+
+.prevsongplaying {
+  border-top: 1px solid #282828 ;
+  vertical-align: middle ;
+  padding: 5px ;
+  cursor: pointer ;
+  background-color: #282828 ;
+
+}
+
+#prevsongcovercontainer {
+  display: inline-block ;
+  overflow: hidden ;
+  height: 48px ;
+  width: 48px ;
+
+}
+.wallpaper {
+  /*100px*/
+  -webkit-filter: blur(11vh);
+  filter: blur(11vh) ;
+  position: fixed ;
+  left: 0 ;
+  top: 0 ;
+  height: 100vh ;
+  width: 100vw ;
+  z-index: -100 ;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+
+  /*Adding a nice fade when the wallpaper changes*/
+  animation-name: wallfade ;
+  animation-duration: 1s;
+
+}
+
+#nologin {
+  animation-duration: 0 ; /*No animation if they aren't logged in (reduntant)*/
+  animation-name: none ;
+}
+
+@keyframes wallfade {
+  from {opacity: 0 ;}
+  to {opacity: 1 ;}
+}
+
+
+#prevsongcover {
+  pointer-events: none ;
+  margin-top: -36px;
+  margin-left: -5px;
+}
+
+
+/*All of this from now on is for the welcome/login/signup pages*/
+.welcomebody {
+  margin-left: 10% ;
+  margin-right: 10% ;
+  margin-top: 48px ;
+  font-family: sans-serif;
+  background-color: #121212 ;
+  color: white ;
+  text-align: center ;
+  margin-bottom: 60px ;
+  user-select: none ;
+
+}
+
+.logreg {
+  padding: 10px ;
+  font-size: 32px ;
+  text-decoration: none ;
+  border: 1px solid white ;
+  border-radius: 3px ;
+}
+
+.logreg:hover {
+  color: white ;
+  background-color: gray ;
+}
+#bannercont {
+  display: inline-block;
+  position: relative ;
+}
+
+.spanbanner {
+  padding: 0 ;
+  margin: 0 ;
+  width: 100% ;
+  max-width: 1200px ;
+  position: relative ;
+
+}
+#ytlogo {
+  vertical-align: middle ;
+  text-align: left ;
+  width: 300px ;
+  display: inline-block ;
+}
+#winfo {
+  text-align: center ;
+
+
+}
+
+#infocont {
+  display: inline-block;
+  margin-left: 7.5% ;
+  margin-right: 56px ;
+  text-align: left ;
+  vertical-align: middle ;
+  width: 50% ;
+
+}
+#winfo {
+  text-align: center ;
+}
+
+#loginbuttons {
+  position: absolute;
+  left: 55% ;
+  bottom: 25% ;
+}
+
+
+#welcome {
+  padding: 0 ;
+  margin: 0 ;
+  width: 100% ;
+}
+
+.wsections {
+  padding: 32px ;
+  background-color: #181818 ;
+  opacity: .8 ;
+}
+.wheading {
+  font-size: 48px ;
+  padding: 0 ;
+  margin: 0 ;
+  opacity: 1 ;
+  font-weight: bold ;
+}
+.wbody {
+  padding: 0 ;
+  margin: 0 ;
+  font-size: 24px ;
+  opacity: 1 ;
+
+}
+#navbar {
+  z-index: 100 ;
+  overflow: hidden ;
+  line-height: 0 ;
+  opacity: .8 ;
+  text-align: left ;
+  background-color: #282828 ;
+  position: fixed ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  height: 48px ;
+}
+#navbuttons {
+  margin-left: 10% ;
+  margin-right: 10% ;
+  margin-top: 26px ;
+}
+#logo {
+  padding: 0 ;
+  margin-top: -19px ;
+  /*font-size: 32px ;*/
+}
+.logregnav {
+  text-decoration: none ;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+.logregnav:hover {
+  color: #c9c9c9 ;
+}
+.slogregnav {
+  text-decoration: none ;
+  padding-left: 10px ;
+  padding-right: 10px ;
+  color: #c9c9c9 ;
+}
+#username {
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+#navlogin {
+  float: right ;
+}
+#settingsform {
+  padding: 10px ;
+  background-color: #181818 ;
+  opacity: .8 ;
+}
+#genreform {
+  display: inline-block;
+  padding: 10px ;
+  border-bottom: 1px solid #282828 ;
+}
+#autogenform {
+  padding: 10px ;
+  font-size: 20px ;
+
+}
+
+.settingsbox {
+  background-color: #181818 ;
+  color: white ;
+  outline: none ;
+  border: none ;
+  font-size: 20px ;
+
+}
+.settingsbox:active {
+  outline: none ;
+}
+.settingsradio {
+  width: 20px ;
+  height: 20px ;
+  background-color: red ;
+}
+
+.settingsbtn {
+  margin: 16px ;
+  width: 320px;
+  padding: 10px ;
+  border: none;
+  border-radius: 5px;
+  background-color: white ;
+  cursor: pointer ;
+}
+.settingsbtn:hover {
+  background-color: gray ;
+}
+
+#tutorial {
+  background-color: #181818 ;
+  opacity: .8 ;
+  text-align: left ;
+}
+.wsubheading {
+  font-size: 32px ;
+  padding: 0 ;
+  margin: 0 ;
+  font-weight: bold ;
+
+}
+#gl {
+  background-color: red ;
+}
+.tutsections {
+  border-bottom: 1px solid #282828 ;
+  padding: 32px ;
+}
+#conclusion {
+  border-bottom: none ;
+}
+.tutleft {
+  vertical-align: top ;
+  width: 50% ;
+  display: inline-block ;
+
+}
+.tutimgs {
+  padding: 16px ;
+  display: inline-block ;
+  width: 45% ;
+  text-align: center ;
+}
+
+#navbuttonscenter {
+  font-size: 32px ;
+  padding: 0 ;
+  text-align: center ;
+  margin-top: 26px ;
+}
+
+#loginregisterform {
+  padding: 16px ;
+  background-color: #181818 ;
+  opacity: .8 ;
+}
+
+#firsttime {
+  padding: 16px ;
+  background-color: #181818 ;
+  opacity: .8 ;
+}
+.logregbox {
+  width: 320px ;
+  padding: 10px ;
+  margin: 16px ;
+  font-size: 24px ;
+  border: none ;
+  border-radius: 5px ;
+}
+.sbtn {
+  margin: 16px ;
+  width: 320px;
+  padding: 10px ;
+  border: none;
+  border-radius: 5px;
+  background-color: white ;
+  cursor: pointer ;
+
+}
+.sbtn:hover {
+  background-color: gray ;
+}
+
+
+/*Slider customization*/
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 50%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: gray ;
+  border-radius: 1.3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 16px  ;
+  width: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: gray ;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: gray ;
+  border-radius: 1.3px;
+}
+input[type=range]::-moz-range-thumb {
+  height: 16px  ;
+  width: 16px;
+  border-radius: 100%;
+  border-color: white ;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background: white ;
+    margin-top: 0px ;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+#volume {
+  width: 7.5% ;
+}

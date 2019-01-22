@@ -1,0 +1,154 @@
+.nav {
+	overflow: hidden;
+	width: 100% ;
+	height: 64px ;
+	text-align: left ;
+	background-color: #1a6ecc ;
+	/*1a6ecc*/
+	font-size: 28px ;
+}
+.navbuttons:link, .navbuttons:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbuttons:hover, .navbuttons:active {
+  background-color: #3286e5 ;
+	/*3286e5*/
+}
+
+body {
+	margin: 0 ;
+	padding: 0 ;
+	background-image: url(img/classy_fabric.png);
+	font-family: 'Nunito', sans-serif;
+	color: white ;
+}
+
+.ryt {
+	text-align: center ;
+
+}
+
+.frame {
+	display: inline-block ;
+	width: 960px ;
+	height: 540px ;
+	margin: 1em ;
+}
+.rightside {
+	text-align: left ;
+	vertical-align: top ;
+	display: inline-block ;
+	width: 560px ;
+
+}
+.info {
+	text-align: left ;
+	margin-top: 10px ;
+	color: white ;
+	padding: 0px ;
+	display: inline-block ;
+
+}
+.subinfo {
+	position: relative ;
+	margin: 0px ;
+	display: inline;
+}
+#latestVid {
+	display: inline ;
+}
+
+
+.controls {
+	text-align: center ;
+	vertical-align: top ;
+	display: inline-block ;
+	width: 500px ;
+	height: 160px ;
+	margin: 1em ;
+}
+.button {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+	display: inline-block ;
+  font-size: 64px;
+	margin: -10px -20px;
+  cursor: pointer;
+}
+
+
+#new {
+	position: relative ;
+	z-index: 1 ;
+
+}
+
+.seek {
+		vertical-align: top ;
+		padding-top: 20px ;
+		text-align: center ;
+
+}
+.seekbox {
+
+	width: 100px ;
+	height: 49px ;
+
+	vertical-align: top ;
+
+	background-color: transparent ;
+	border: none ;
+	border-bottom: 1px solid white ;
+
+	color: white ;
+	font-size: 24px ;
+	font-family: 'Nunito', sans-serif;
+
+}
+.seekbox:focus {
+	outline: none ;
+	border: none ;
+	border-bottom: 1px solid gray ;
+}
+
+.seekbutton {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+	cursor: pointer;
+
+
+}
+
+.favbutton {
+	padding: 30px ;
+}
+
+.fbutton {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+	cursor: pointer;
+
+
+}
+#body {
+	margin: auto ;
+	width: 80% ;
+
+}
+:link {
+	color: #1a6ecc ;
+}
+:visited {
+	color: #3286e5 ;
+}

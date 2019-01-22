@@ -1,0 +1,105 @@
+body {
+    #background-color: #dbdbdb ;
+	background-image: url(img/classy_fabric.png);
+	width: 90% ;
+	font-family: 'Nunito', sans-serif;
+
+
+	
+}
+h1 {
+	position: relative ;
+	left: 10% ;
+	#color: #1a6ecc ;
+	color: #dddddd ;
+    #color: #ed301e; #youtubeish red
+
+	#font-family: 'Anton', sans-serif;
+
+
+	
+	text-align: left ;
+	
+}
+
+.logo
+{
+
+	width: 100% ;
+	padding: 0 ;
+	margin: 0 ;
+	#border-color: #1a6ecc ;
+	margin-bottom: 15px ;
+	background-color: #1a6ecc ;
+	
+	
+	
+}
+
+.controls {
+	
+	text-align: right ;
+	position: absolute ;
+	right: 12.5% ;
+	top: 20% ;
+	text-align: center ;
+	
+	
+}
+
+.button {
+	
+    #background-color: #ed301e; 
+	background-color: #999999 ;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+	margin: 4px 2px;
+    cursor: pointer;
+		
+}
+
+.button:hover {
+	
+	#background-color: #d82715 ;
+	background-color: #1c57b5 ;
+	
+}
+
+
+.frame {
+	
+	position: relative ;
+	text-align: center ;
+	right: 10% ;
+
+	
+	color: white ;
+
+	
+}
+
+
+.info {
+	
+	margin-top: 10px ;
+	color: white ;
+	width: 80% ;
+
+	
+	padding: 0px ;
+	
+}
+
+.subinfo {
+	
+	position: relative ;
+	left: 10% ;
+
+	margin: 0px ;
+	
+}

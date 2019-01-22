@@ -1,0 +1,134 @@
+.nav {
+	overflow: hidden;
+	width: 100% ;
+	height: 64px ;
+	text-align: left ;
+	background-color: #1a6ecc ;
+	font-size: 28px ;
+}
+.navbuttons:link, .navbuttons:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbuttons:hover, .navbuttons:active {
+  background-color: #3286e5 ;
+}
+
+body {
+	margin: 0 ;
+	padding: 0 ;
+	text-align: center ;
+	background-image: url(img/classy_fabric.png);
+	font-family: 'Nunito', sans-serif;
+	color: white ;
+}
+
+.ryt {
+	margin: auto ;
+	width: 80% ;
+
+}
+
+
+#searchbox {
+
+	width: 240px ;
+	height: 49px ;
+	vertical-align: top ;
+	background-color: transparent ;
+	border: none ;
+	border-bottom: 1px solid white ;
+	color: white ;
+	font-size: 24px ;
+	font-family: 'Nunito', sans-serif;
+
+}
+#searchbox:focus {
+	outline: none ;
+	border: none ;
+	border-bottom: 1px solid gray ;
+}
+
+#searchbutton {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+	cursor: pointer;
+
+
+}
+
+#searchresults {
+	text-align: left ;
+	border: 3px solid gray;
+
+
+}
+th, td {
+	border: 1px solid gray ;
+}
+
+#playbutton {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+	cursor: pointer;
+
+
+}
+#watch {
+	text-align: center ;
+}
+
+#searchtitle {
+	vertical-align: top ;
+	width: 400px ;
+	height: 180px ;
+
+	display: inline-block;
+}
+#searchartist {
+	vertical-align: top ;
+	width: 400px ;
+	height: 180px ;
+
+	display: inline-block;
+}
+
+#searchdate {
+	vertical-align: top ;
+	width: 400px ;
+	height: 180px ;
+
+	display: inline-block;
+}
+
+#datepicker {
+
+	width: 240px ;
+	height: 49px ;
+	vertical-align: top ;
+	background-color: transparent ;
+	border: none ;
+	border-bottom: 1px solid white ;
+	color: white ;
+	font-size: 24px ;
+	font-family: 'Nunito', sans-serif;
+
+}
+#datepicker:hover {
+
+}
+
+#datesearchbutton {
+	border: none ;
+	background-color: transparent ;
+  color: transparent;
+	cursor: pointer;
+
+
+}
